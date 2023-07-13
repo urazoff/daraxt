@@ -1,0 +1,55 @@
+T:
+        A
+      / | \
+     >  >  >
+     B  C  D
+    / \    |
+   >   >   >
+   E   F   G
+   
+> pick all n in T: n is leaf
+> [
+     E
+
+     F
+
+     C
+
+     G
+  ]
+
+> for all n in [pick all n in T: n is leaf] pick parent of n
+> [
+      E
+      |
+      >
+      B
+
+      F
+      |
+      >
+      B
+
+      C
+      |
+      >
+      A
+
+      G
+      |
+      >
+      D
+  ]
+
+> pick all n in [
+                    for all n in 
+                        [pick all n in T: n is leaf] 
+                    pick parent of n
+                ]: n is leaf
+> [
+      B
+
+      A
+
+      D
+  ]
