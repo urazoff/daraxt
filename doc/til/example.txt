@@ -53,3 +53,11 @@ T:
 
       D
   ]
+
+> for n in [pick n in T: n is B] pick all siblings of n
+> [
+      B
+    /   \
+   >     >
+   C     D
+  ]
